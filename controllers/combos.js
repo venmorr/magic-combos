@@ -56,9 +56,29 @@ function show(req, res) {
   })
 }
 
+function deleteCombo(req, res) {
+  Combo.findById(req.params.comboId)
+  .then(combo => {
+    if (combo.author.equals(req.user.profile._id)) {
+      combo.deleteOne()
+      .then(() => {
+        res.redirect('/combos')
+      })
+    } else {
+      throw new Error ('🚫 Not authorized 🚫')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/tacos')
+  })
+}
+
 export {
   index,
   newCombo as new,
   create,
   show,
+  deleteCombo as delete,
+
 }

@@ -8,6 +8,7 @@ router.get('/', combosCtrl.index)
 router.get('/new', isLoggedIn, combosCtrl.new)  
 router.post('/', isLoggedIn, combosCtrl.create)
 router.get('/:comboId', isLoggedIn,combosCtrl.show)
+router.delete('/:comboId', isLoggedIn, combosCtrl.delete)
 
 export {
   router
