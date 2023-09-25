@@ -5,8 +5,9 @@ import { isLoggedIn } from '../middleware/middleware.js'
 const router = Router()
 
 router.get('/', combosCtrl.index)
-router.get('/new', isLoggedIn, combosCtrl.new)  //should be '/combos/new'
+router.get('/new', isLoggedIn, combosCtrl.new)  
 router.post('/', isLoggedIn, combosCtrl.create)
+router.get('/:comboId', isLoggedIn,combosCtrl.show)
 
 export {
   router

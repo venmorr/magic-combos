@@ -41,8 +41,24 @@ function create(req, res) {
   })
 }
 
+function show(req, res) {
+  Combo.findById(req.params.comboId)
+  // .populate("author")
+  .then(combo => {
+    res.render('combos/show', {
+      combo,
+      title: "combo show"
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/combos')
+  })
+}
+
 export {
   index,
   newCombo as new,
   create,
+  show,
 }
