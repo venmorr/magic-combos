@@ -1,5 +1,5 @@
 for profile page:
 
-<a href="/auth/logout" class="right">
-        Logout
-      </a>
+ <!-- <form action="/combos/<%# combo._id %>/comments/<%# comment._id %>?_method=DELETE" method="POST">
+                <button>X</button>
+              </form> -->

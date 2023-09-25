@@ -1,5 +1,5 @@
 <%- include('../partials/html-head') %>
-<!-- <link rel="stylesheet" href="/stylesheets/movies/new.css" /> -->
+<!-- <link rel="stylesheet" href="/stylesheets/combos/new.css" /> -->
 <%- include('../partials/nav') %>
 
 <main>
@@ -17,6 +17,34 @@
   <form action="/combos/<%= combo._id %>?_method=DELETE" method="POST">
     <button class="btn" type="submit">Delete this combo! 💀</button>
   </form>
+   
+  <form 
+  id="add-comment-form"
+  action="/combos/<%= combo._id %>/comments"
+  method="POST">
+    <label for="content-textarea">Comment:</label>
+    <textarea name="content" id="content-textarea"></textarea>
+    <button class="btn" type="submit">Add Comment</button>
+  </form>
+
+  <% if (combo.comments.length) { %>
+    <table>
+      <thead>
+        <tr>
+          <th>comment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% combo.comments.forEach(function(comment) { %>
+          <tr>
+            <td><%= comment.content %></td>
+          </tr>
+          <% }) %>
+      </tbody>
+    </table>
+  <% } else { %>
+    <h3>No Reviews Yet</h3>
+  <% } %>
 </main>
 
 <%- include("../partials/footer") %>
