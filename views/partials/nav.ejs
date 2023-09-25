@@ -5,14 +5,18 @@
 <body>
   <nav>
     <a href="/combos" class="left">
-      <button type="submit">Combos</button>
+      COMBOS
     </a>
+
     <% if (user) { %>
-      <!-- <a href="/auth/logout" class="right">
-        <button type="submit">Logout</button>
-      </a> -->
-      <a href="/auth/logout" class="right">
-        <button type="submit">Logout</button>
+    <a href="/combos/new" class="right" %>>
+      ADD COMBO
+    </a>
+    <% } %>
+
+    <% if (user) { %>
+      <a href="/profiles/show" class="right">
+        PROFILE
       </a>
     <% } else { %>
       <div 

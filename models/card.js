@@ -5,16 +5,17 @@ const Schema = mongoose.Schema
 const cardSchema = new Schema({
   name: { type: String, required: true },
   normalizedName: String,
-  cmc: String,
+  cmc: Number,
   colors: [String], 
   manaCost: String,
   rarity: String,
-  type: [String],
+  type: String,
   types: [String],
   subtypes: [String],
   text: String,
   power: String,
   toughness: String,
+  imageUrl: String,
   setName: String,
 }, {
   timestamps: true

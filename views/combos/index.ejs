@@ -1,29 +1,16 @@
 <%- include('../partials/html-head') %>
 <%- include('../partials/nav') %>
 
-<% if (user) { %>
-  <h2> Add a Combo!</h2>
-  <form action="/combos" method="POST">
-    <label>
-      Name:
-      <input type="text" name="name" autocomplete="off">
-    </label>
-    
-    <!-- add cards -->
-    <!-- add description -->
-    <button type="submit">Add</button>
-  </form>
-<% } %>
 <h2>All the Combos!</h2>
 <ul>
   <% combos.forEach(combo => { %>
-    <li>
-      🌮 
+    <li> 
       <a href="/combos/<%= combo._id %>"><%= combo.name %> </a>
-      is <%= combo.tasty ? 'tasty' : 'not tasty' %>
     </li>
   <% }) %>
 </ul>
-</section>
+<a href="/auth/logout" class="right">
+  Logout
+</a>
 
 <%- include('../partials/footer') %>
