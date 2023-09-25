@@ -10,6 +10,7 @@ router.post('/', isLoggedIn, combosCtrl.create)
 router.get('/:comboId', isLoggedIn,combosCtrl.show)
 router.post('/:comboId/comments', isLoggedIn, combosCtrl.createComment)
 router.delete('/:comboId', isLoggedIn, combosCtrl.delete)
+router.delete('/:comboId/comments/:commentId', isLoggedIn, combosCtrl.deleteComment)
 
 export {
   router

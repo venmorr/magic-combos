@@ -29,15 +29,15 @@
 
   <% if (combo.comments.length) { %>
     <table>
-      <thead>
-        <tr>
-          <th>comment</th>
-        </tr>
-      </thead>
       <tbody>
         <% combo.comments.forEach(function(comment) { %>
           <tr>
             <td><%= comment.content %></td>
+            <td>
+              <form action="/combos/<%= combo._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
+                <button>X</button>
+              </form>
+            </td>
           </tr>
           <% }) %>
       </tbody>

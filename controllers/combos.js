@@ -93,6 +93,25 @@ function createComment(req, res) {
   })
 }
 
+function deleteComment(req, res) {
+  Combo.findById(req.params.comboId)
+  .then(combo => {
+    combo.comments.id(req.params.commentId).deleteOne()
+    combo.save()
+    .then(() => {
+      res.redirect(`/combos/${combo._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/combos')
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/combos')
+  })
+}
+
 export {
   index,
   newCombo as new,
@@ -100,5 +119,6 @@ export {
   show,
   deleteCombo as delete,
   createComment,
+  deleteComment,
 
 }
