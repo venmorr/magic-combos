@@ -4,12 +4,12 @@ function index(req, res) {
   Profile.find({})
   .then(profiles => {
     res.render('profiles/index', {
+      title: 'Profiles',
       profiles,
-			title: "🐱"
     })
   })
   .catch(err => {
-    console.log(err)
+    console.log('title not working', err)
     res.redirect('/')
   })
 }
