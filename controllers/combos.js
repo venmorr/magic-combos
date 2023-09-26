@@ -43,7 +43,7 @@ function create(req, res) {
 
 function show(req, res) {
   Combo.findById(req.params.comboId)
-  // .populate("author")
+  .populate("author")
   .then(combo => {
     res.render('combos/show', {
       combo,
