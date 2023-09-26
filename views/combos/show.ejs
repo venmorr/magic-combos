@@ -9,14 +9,18 @@
 
   <p>From the Library of <a> <%= combo.author.name %> </a> <img src ="<%= combo.author.avatar %>" alt="pfp not found">  </p> 
   
+  <% if (combo.author.equals(user.profile._id)) { %>
   <a href="/combos/<%= combo._id %>/edit">
     <button>Edit Combo</button>
   </a>
+  <% } %>
   
+  <% if (combo.author.equals(user.profile._id)) { %>
   <form action="/combos/<%= combo._id %>?_method=DELETE" method="POST">
     <button class="btn" type="submit">Delete this combo! 💀</button>
   </form>
-   
+  <% } %>
+
   <form 
   id="add-comment-form"
   action="/combos/<%= combo._id %>/comments"

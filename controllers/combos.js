@@ -59,10 +59,14 @@ function show(req, res) {
 function edit(req, res) {
   Combo.findById(req.params.comboId)
   .then(combo => {
+    if (combo.author.equals(req.user.profile._id)) {
     res.render('combos/edit', {
       combo: combo,
       title: 'Edit Combo'
     })
+  } else {
+    throw new Error ('🚫 Not authorized 🚫')
+  }
   })
   .catch(err => {
     console.log(err)
