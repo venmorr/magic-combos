@@ -56,6 +56,35 @@ function show(req, res) {
   })
 }
 
+function edit(req, res) {
+  Combo.findById(req.params.comboId)
+  .then(combo => {
+    res.render('combos/edit', {
+      combo: combo,
+      title: 'Edit Combo'
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/combos')
+  })
+}
+
+function update(req, res) {
+  // req.body.nowShowing = !!req.body.nowShowing
+  // for (let key in req.body) {
+  //   if (req.body[key] === '') delete req.body[key]
+  // }
+  Combo.findByIdAndUpdate(req.params.comboId, req.body, {new: true})
+  .then(combo => {
+    res.redirect(`/combos/${combo._id}`)
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/combos')
+  })
+}
+
 function deleteCombo(req, res) {
   Combo.findById(req.params.comboId)
   .then(combo => {
@@ -117,6 +146,8 @@ export {
   newCombo as new,
   create,
   show,
+  edit,
+  update,
   deleteCombo as delete,
   createComment,
   deleteComment,

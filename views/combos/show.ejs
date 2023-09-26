@@ -3,17 +3,16 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <!-- display combo name -->
   <h1> <%= combo.name %></h1>
   <!-- display cards as a list of names -->
   <h2> <%= combo.description %></h2>
-  <!-- view author button -->
+
   <p>From the Library of <a> <%= combo.author.name %> </a> <img src ="<%= combo.author.avatar %>" alt="pfp not found">  </p> 
   
-
-  <!-- display description -->
-  <!-- edit button -->
-  <!-- delete button -->
+  <a href="/combos/<%= combo._id %>/edit">
+    <button>Edit Combo</button>
+  </a>
+  
   <form action="/combos/<%= combo._id %>?_method=DELETE" method="POST">
     <button class="btn" type="submit">Delete this combo! 💀</button>
   </form>
