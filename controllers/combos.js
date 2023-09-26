@@ -75,10 +75,6 @@ function edit(req, res) {
 }
 
 function update(req, res) {
-  // req.body.nowShowing = !!req.body.nowShowing
-  // for (let key in req.body) {
-  //   if (req.body[key] === '') delete req.body[key]
-  // }
   Combo.findByIdAndUpdate(req.params.comboId, req.body, {new: true})
   .then(combo => {
     res.redirect(`/combos/${combo._id}`)
@@ -145,6 +141,27 @@ function deleteComment(req, res) {
   })
 }
 
+function addCard(req, res) {
+  Combo.findById(req.params.comboId)
+  .then(combo => {
+    Card.find({name: req.body.name})
+    .then(cards => {
+      combo.cards.push(cards[0])
+      combo.save()
+        res.redirect('/combos')
+      console.log(cards)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/combos') // need to redirect to specific combo
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/combos') // need to redirect to specific combo
+  })
+}
+
 export {
   index,
   newCombo as new,
@@ -155,5 +172,6 @@ export {
   deleteCombo as delete,
   createComment,
   deleteComment,
+  addCard,
 
 }

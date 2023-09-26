@@ -5,6 +5,10 @@
 <main>
   <h1> <%= combo.name %></h1>
   <!-- display cards as a list of names -->
+  <% if (combo.author.equals(user.profile._id)) { %>
+  <%- include('../partials/card-input') %>
+  <% } %>
+
   <h2> <%= combo.description %></h2>
 
   <p>From the Library of <a href="/profiles/<%= combo.author._id %>"> <%= combo.author.name %> </a> </p> 

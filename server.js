@@ -23,6 +23,7 @@ import { router as indexRouter } from './routes/index.js'
 import { router as authRouter } from './routes/auth.js'
 import { router as combosRouter } from './routes/combos.js'
 import { router as profilesRouter } from './routes/profiles.js'
+import { router as cardsRouter } from './routes/cards.js'
 
 // create the express app
 const app = express()
@@ -65,6 +66,7 @@ app.use('/', indexRouter)
 app.use('/auth', authRouter)
 app.use('/combos', combosRouter)
 app.use('/profiles', profilesRouter)
+app.use('/cards', cardsRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
