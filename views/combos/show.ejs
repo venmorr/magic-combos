@@ -4,7 +4,9 @@
 
 <main>
   <h1> <%= combo.name %></h1>
-  <!-- display cards as a list of names -->
+
+  <%- include('../partials/combo-display') %>
+
   <% if (combo.author.equals(user.profile._id)) { %>
   <%- include('../partials/card-input') %>
   <% } %>
