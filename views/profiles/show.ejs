@@ -2,6 +2,7 @@
 <%- include('../partials/nav') %>
 
 <main>
+  
   <div>
     <img 
       class="profile-avatar"
@@ -10,6 +11,20 @@
     >
   </div>
   <h1>It's <%= isSelf ? "you" : profile.name %>!</h1>
+  
+  <!-- <ul>
+    <%# combos.forEach(combo => { %>
+      <li> 
+        <a href="/combos/<%# combo._id %>"><%# combo.name %> </a>
+
+      </li>
+    <%# }) %>
+  </ul> -->
+
+  <a href="/auth/logout" class="right">
+    Logout
+  </a>
+
 </main>
 
 <%- include('../partials/footer') %>

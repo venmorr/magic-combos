@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  
   background-color: #1a1a1a;
   color: #f6f6f6;
   /* Use a system font, if none are available use any found sans-sarif font */
@@ -29,12 +30,12 @@ nav {
   min-height: 60px;
 }
 
-main {
+/* main {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
+} */
 
 .right {
   margin-left: auto;
@@ -54,7 +55,11 @@ h3 {
 }
 
 ul {
+  display: flex;
   list-style-type: none;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 0px;
 }
 
 p, label, li, button, input {
@@ -91,7 +96,7 @@ nav > a {
 }
 
 .link {
-  padding: 12px 0;
+  /* padding: 12px 0; */
   font-size: 18px;
   display: inline-block;
 }

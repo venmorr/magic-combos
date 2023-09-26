@@ -1,7 +1,6 @@
 <%- include('../partials/html-head') %>
 <%- include('../partials/nav') %>
 
-<h2>All the Combos!</h2>
 <ul>
   <% combos.forEach(combo => { %>
     <li> 
@@ -9,8 +8,5 @@
     </li>
   <% }) %>
 </ul>
-<a href="/auth/logout" class="right">
-  Logout
-</a>
 
 <%- include('../partials/footer') %>
