@@ -1,0 +1,7 @@
+/* html * {
+  border: 1px solid red;
+} */
+
+.card-list {
+  display: flex;
+}
