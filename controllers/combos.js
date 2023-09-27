@@ -1,6 +1,12 @@
 import { Combo } from '../models/combo.js'
 import { Card } from '../models/card.js'
 
+/* helper functions */
+function normalizeName(name) {
+  return name.toLowerCase()
+}
+
+/* controller functions */
 function index(req, res) {
   Combo.find({})
   .populate([
@@ -150,7 +156,7 @@ function deleteComment(req, res) {
 function addCard(req, res) {
   Combo.findById(req.params.comboId)
   .then(combo => {
-    Card.find({name: req.body.name})
+    Card.find({normalizedName: normalizeName(req.body.name)})
     .then(cards => {
       combo.cards.push(cards[0])
       combo.save()
@@ -159,12 +165,32 @@ function addCard(req, res) {
     })
     .catch(err => {
       console.log(err)
-      res.redirect('/combos') // need to redirect to specific combo
+      res.redirect('/combos') 
     })
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/combos') // need to redirect to specific combo
+    res.redirect('/combos') 
+  })
+}
+
+function removeCard(req, res) {
+  Combo.findById(req.params.comboId)
+  .then(combo => {
+    const cardToRemove = req.params.cardId
+    combo.cards.remove(cardToRemove)
+    combo.save()
+    .then(() => {
+      res.redirect(`/combos/${combo._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/combos')
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/combos')
   })
 }
 
@@ -179,5 +205,5 @@ export {
   createComment,
   deleteComment,
   addCard,
-  
+  removeCard,
 }
