@@ -101,6 +101,21 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+  margin: 10px;
+  background-color: #5F5458;
+  max-width: 90vw;
+  padding: 10px;
+}
+
+.card-list-index {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-right: 10px solid #402E32;
+}
+
 /* .buttons {
   display: flex;
   flex-direction: column;
