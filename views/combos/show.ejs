@@ -9,55 +9,11 @@
 
   <%- include('../partials/combo-display') %>
 
-  <div class="combo-body">
-  <% if (combo.author.equals(user.profile._id)) { %>
-  <%- include('../partials/card-input') %>
-  <% } %>
+  <%- include('../partials/combo-details') %>
 
-  <h2> <%= combo.description %></h2>
 
-  <div class="buttons">
-  <% if (combo.author.equals(user.profile._id)) { %>
-  <a href="/combos/<%= combo._id %>/edit">
-    <button class="btn">Edit Combo</button>
-  </a>
-  <% } %>
+
   
-  <% if (combo.author.equals(user.profile._id)) { %>
-  <form action="/combos/<%= combo._id %>?_method=DELETE" method="POST">
-    <button class="btn" type="submit">Delete this combo! 💀</button>
-  </form>
-  <% } %>
-  </div>
-
-    <form 
-    id="add-comment-form"
-    action="/combos/<%= combo._id %>/comments"
-    method="POST">
-      <label for="content-textarea">Comment:</label>
-      <textarea name="content" id="content-textarea"></textarea>
-      <button class="btn" type="submit">Add Comment</button>
-    </form>
-
-  <% if (combo.comments.length) { %>
-    <table>
-      <tbody>
-        <% combo.comments.forEach(function(comment) { %>
-          <tr>
-            <td><%= comment.content %></td>
-            <td>
-              <form action="/combos/<%= combo._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
-                <button>X</button>
-              </form>
-            </td>
-          </tr>
-          <% }) %>
-      </tbody>
-    </table>
-  <% } else { %>
-    <h3>No Reviews Yet</h3>
-  <% } %>
-</div>
 </main>
 
 <%- include("../partials/footer") %>

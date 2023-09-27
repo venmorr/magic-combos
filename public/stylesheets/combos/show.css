@@ -1,6 +1,6 @@
-html * {
+/* html * {
   border: 1px solid red;
-}
+} */
 
 body {
   /* margin: 0; */
@@ -52,9 +52,23 @@ i {
   align-items: center;
   justify-content: center; 
   flex-direction: column;
+  align-items: flex-end;  
+}
+
+.combo-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 a {
   color: #e3e3e3;
   text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+    align-items: flex-end;
 }
