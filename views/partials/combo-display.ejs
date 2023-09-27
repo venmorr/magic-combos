@@ -2,8 +2,9 @@
 <div class="card-list">
   <% combo.cards.forEach(card => { %>
     <div class="card">
-      <% if (combo.author.equals(user.profile._id)) { %>
+      
       <img src="<%= card.imageUrl %>">
+      <% if (combo.author.equals(user.profile._id)) { %>
       <form action="/combos/<%= combo._id %>/card/<%= card._id %>?_method=DELETE" method="POST">
         <button class="removeCard">x</button>
       <% } %> 

@@ -17,6 +17,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 1;
 }
 
 .spacer {
@@ -133,6 +134,11 @@ h3 {
 .card {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.removeCard {
+  position: absolute;
+  
 }
 
 /* CSS */
