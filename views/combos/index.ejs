@@ -5,7 +5,13 @@
   <% combos.forEach(combo => { %>
     <li> 
       <a href="/combos/<%= combo._id %>"><%= combo.name %> </a>
-      <%#- include('../partials/combo-display') %>
+      <div class="card-list">
+        <% combo.cards.forEach(card => { %>
+          <div class="card">
+            <img src="<%= card.imageUrl %>">
+          </div>
+        <% }) %>
+      </div>
     </li>
   <% }) %>
 </ul>

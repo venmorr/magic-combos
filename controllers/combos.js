@@ -3,6 +3,9 @@ import { Card } from '../models/card.js'
 
 function index(req, res) {
   Combo.find({})
+  .populate([
+    {path: "cards", model:"Card"},
+  ])
   .then(combos => {
     res.render('combos/index', {
       combos,
@@ -151,7 +154,7 @@ function addCard(req, res) {
     .then(cards => {
       combo.cards.push(cards[0])
       combo.save()
-        res.redirect('/combos')
+        res.redirect(`/combos/${combo._id}`)
       console.log(cards)
     })
     .catch(err => {
@@ -176,5 +179,5 @@ export {
   createComment,
   deleteComment,
   addCard,
-
+  
 }
