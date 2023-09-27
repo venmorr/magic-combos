@@ -5,7 +5,7 @@
   <% combos.forEach(combo => { %>
     <li> 
       <a href="/combos/<%= combo._id %>"><%= combo.name %> </a>
-      <div class="card-list">
+      <div class="card-list-index">
         <% combo.cards.forEach(card => { %>
           <div class="card">
             <img src="<%= card.imageUrl %>">
@@ -17,4 +17,3 @@
 </ul>
 
 <%- include('../partials/footer') %>
-

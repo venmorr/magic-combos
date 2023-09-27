@@ -21,7 +21,6 @@ nav {
 
 .spacer {
   height: 80px;
-
 }
 
 i {
@@ -55,8 +54,13 @@ i {
   /* padding: 5px; */
 }
 
+.card-list-index {
+  display: flex;
+  justify-content: flex-start;
+  /* flex-wrap: wrap; */
+}
+
 .card-list {
-  /* background-color: #ffffff; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

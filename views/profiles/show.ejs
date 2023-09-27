@@ -16,15 +16,20 @@
   </div>
   <h1>It's <%= isSelf ? "you" : profile.name %>!</h1>
 
-  <!-- <ul class="index-list">
-   
-    <%# combos.forEach(combo => { %>
+  <ul class="profile-list">
+    <% combos.forEach(combo => { %>
       <li> 
-        <a href="/combos/<%#= combo._id %>"><%#= combo.name %> </a>
-        <%#- include('../partials/combo-display') %>
+        <a href="/combos/<%= combo._id %>"><%= combo.name %> </a>
+        <div class="card-list-index">
+          <% combo.cards.forEach(card => { %>
+            <div class="card">
+              <img src="<%= card.imageUrl %>">
+            </div>
+          <% }) %>
+        </div>
       </li>
-    <%# }) %>
-  </ul> -->
+    <% }) %>
+  </ul>
 
 </main>
 

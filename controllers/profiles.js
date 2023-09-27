@@ -1,4 +1,5 @@
 import { Profile } from '../models/profile.js'
+import { Combo } from '../models/combo.js'
 
 function index(req, res) {
   Profile.find({})
@@ -17,11 +18,19 @@ function index(req, res) {
 function show(req, res) {
   Profile.findById(req.params.profileId)
   .then(profile => {
-    const isSelf = profile._id.equals(req.user.profile._id)
-    res.render("profiles/show", {
-      title: `${profile.name}'s profile`,
-      profile,
-      isSelf,
+    Combo.find({author: profile._id})
+    .populate([
+      {path: "cards", model:"Card"},
+    ])
+    .then(combos => {
+      
+      const isSelf = profile._id.equals(req.user.profile._id)
+      res.render("profiles/show", {
+        title: `${profile.name}'s profile`,
+        profile,
+        combos,
+        isSelf,
+      })
     })
   })
   .catch((err) => {
