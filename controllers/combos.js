@@ -177,8 +177,7 @@ function addCard(req, res) {
 function removeCard(req, res) {
   Combo.findById(req.params.comboId)
   .then(combo => {
-    const cardToRemove = req.params.cardId
-    combo.cards.remove(cardToRemove)
+    combo.cards.remove(req.params.cardId)
     combo.save()
     .then(() => {
       res.redirect(`/combos/${combo._id}`)
