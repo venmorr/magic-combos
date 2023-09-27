@@ -1,6 +1,6 @@
-/* html * {
+html * {
   border: 1px solid red;
-} */
+}
 
 body {
   /* margin: 0; */
@@ -71,4 +71,9 @@ a {
   display: flex;
   flex-direction: column;
     align-items: flex-end;
+}
+
+.left {
+  margin: 10px;
+  max-width: 50%;
 }
