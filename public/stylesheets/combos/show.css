@@ -1,11 +1,12 @@
-/* html * {
+html * {
   border: 1px solid red;
-} */
+}
 
 body {
   /* margin: 0; */
   background-color: #402E32;
   color: #f6f6f6;
+  font-family: system-ui;
 }
 
 nav {
@@ -21,6 +22,39 @@ i {
   padding: 25px;
 }
 
-.index-list { 
+.index-list a{ 
+  color: #f6f6f6;
+}
+
+.combo-name {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.card img{
+  max-height: 310px;
+  max-width: 80vw;
+  border: 3px solid white;
   
+}
+
+.card-list {
+  /* background-color: #ffffff; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.combo-body {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+}
+
+a {
+  color: #e3e3e3;
+  text-decoration: none;
 }
