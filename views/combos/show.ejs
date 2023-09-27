@@ -3,7 +3,8 @@
 
 <main>
   <div class="combo-name">
-    <h1> <%= combo.name %></h1>
+    <p>From the Library of <a href="/profiles/<%= combo.author._id %>"> <%= combo.author.name %> </a> </p>
+    <h1> <%= combo.name %></h1> 
   </div>
 
   <%- include('../partials/combo-display') %>
@@ -15,11 +16,10 @@
 
   <h2> <%= combo.description %></h2>
 
-  <p>From the Library of <a href="/profiles/<%= combo.author._id %>"> <%= combo.author.name %> </a> </p> 
-  
+  <div class="buttons">
   <% if (combo.author.equals(user.profile._id)) { %>
   <a href="/combos/<%= combo._id %>/edit">
-    <button>Edit Combo</button>
+    <button class="btn">Edit Combo</button>
   </a>
   <% } %>
   
@@ -28,15 +28,16 @@
     <button class="btn" type="submit">Delete this combo! 💀</button>
   </form>
   <% } %>
+  </div>
 
-  <form 
-  id="add-comment-form"
-  action="/combos/<%= combo._id %>/comments"
-  method="POST">
-    <label for="content-textarea">Comment:</label>
-    <textarea name="content" id="content-textarea"></textarea>
-    <button class="btn" type="submit">Add Comment</button>
-  </form>
+    <form 
+    id="add-comment-form"
+    action="/combos/<%= combo._id %>/comments"
+    method="POST">
+      <label for="content-textarea">Comment:</label>
+      <textarea name="content" id="content-textarea"></textarea>
+      <button class="btn" type="submit">Add Comment</button>
+    </form>
 
   <% if (combo.comments.length) { %>
     <table>

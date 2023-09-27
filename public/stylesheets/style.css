@@ -1,6 +1,6 @@
-html {
-  box-sizing: border-box;
-}
+/* html * {
+  border: 1px solid red;
+} */
 
 /* The Universal Selector */
 *, /* All elements*/
@@ -12,32 +12,28 @@ html {
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #402E32;
   color: #f6f6f6;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
     'Helvetica Neue', sans-serif;
-  margin: 0;
 }
 
 nav {
-  background-color: #e26a01;
-  color: #1a1a1a;
+  background-color: #FEA04D;
   display: flex;
   align-items: center;
   padding: 10px;
   min-height: 60px;
 }
 
- /* main {
+nav > a {
+  margin: 8px 24px;
+  text-decoration: none;
+  font-size: 24px;
   display: flex;
   align-items: center;
-  justify-content: center; 
-  flex-direction: column;
-}  */
-
-.right {
-  margin-left: auto;
+  justify-content: space-between;
 }
 
 /* added */
@@ -61,6 +57,11 @@ ul {
   padding: 0px;
 }
 
+.combo-name > * {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 p, label, li, button, input {
   font-size: 18px;
 }
@@ -81,15 +82,6 @@ pre {
   font-size: 14px;
 }
 
-nav > a {
-  margin: 8px 24px;
-  text-decoration: none;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .btn {
   margin: 16px 0;
 }
@@ -106,4 +98,47 @@ nav > a {
 
 .inline {
   display: inline;
+}
+
+#nav-el {
+  color: #1a1a1a;
+}
+
+.card img{
+  max-height: 310px;
+  max-width: 80vw;
+  border: 3px solid white;
+  
+}
+
+.card-list {
+  /* background-color: #ffffff; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.combo-name {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.combo-body {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.btn {
+  padding: 10px 24px;
+  background-color: #e26a01;
+
+}
+
+.button {
+  display: flex;
+  align-items: center;
 }

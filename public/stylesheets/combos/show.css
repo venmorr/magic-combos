@@ -1,25 +1,26 @@
+/* html * {
+  border: 1px solid red;
+} */
+
 body {
-  border: 3px solid red;
+  /* margin: 0; */
+  background-color: #402E32;
+  color: #f6f6f6;
 }
 
-.card-list {
-  background-color: #ffffff;
-  border: 3px solid white;
+nav {
+  height: 80px;
+  background-color: #FEA04D;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.combo-name {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center; 
-  flex-direction: column;
 }
 
-.combo-body {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  flex-direction: column;
+i {
+  padding: 25px;
+}
+
+.index-list { 
+  
 }

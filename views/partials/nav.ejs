@@ -4,19 +4,22 @@
 </head>
 <body>
   <nav>
-    <a href="/combos" class="left">
-      COMBOS
+    <a href="/combos" id="nav-el">
+      <!-- COMBOS -->
+      <i class="fa-solid fa-wand-sparkles fa-2xl" style="color: #1a1a1a;"></i>
     </a>
 
     <% if (user) { %>
-    <a href="/combos/new" class="right" %>>
-      ADD COMBO
+    <a href="/combos/new" class="right" id="nav-el">
+      <!-- + -->
+      <i class="fa-solid fa-plus fa-2xl" style="color: #1a1a1a;"></i>
     </a>
     <% } %>
 
     <% if (user) { %>
-      <a href="/profiles/index" class="right">
-        PROFILES
+      <a href="/profiles/index" class="right" id="nav-el">
+        <!-- PROFILES -->
+        <i class="fa-solid fa-ghost fa-2xl" style="color: #1a1a1a;"></i>
       </a>
     <% } else { %>
       <div 

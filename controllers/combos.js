@@ -6,7 +6,7 @@ function index(req, res) {
   .then(combos => {
     res.render('combos/index', {
       combos,
-      title: '☀️💧💀🔥🌳'
+      title: 'title'
     })
   })
   .catch(err => {
