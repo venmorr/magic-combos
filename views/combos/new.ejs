@@ -3,24 +3,26 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <h1> <%= title %></h1>
-  <form id="new-form" action="/combos" method="POST">
-    <label for="name-input">Name:</label>
-    <input 
-      type="text"
-      name="name" 
-      value="<%= combos.name %>" 
-      autocomplete="off"
-    >
-    <label for="description-input">Description:</label>
-    <textarea 
-      type="text"
-      name="description" 
-      value="<%= combos.description %>" 
-      autocomplete="off">
-    </textarea>
-    <button class="btn" type="submit">Add Combo</button>
-  </form>
+  <div class="new-input">
+    <h1> <%= title %></h1>
+    <form id="new-form" action="/combos" method="POST">
+      <label for="name-input">Name:</label>
+      <input 
+        type="text"
+        name="name" 
+        value="<%= combos.name %>" 
+        autocomplete="off"
+      >
+      <label for="description-input">Description:</label>
+      <textarea 
+        type="text"
+        name="description" 
+        value="<%= combos.description %>" 
+        autocomplete="off">
+      </textarea>
+      <button class="btn" type="submit">Add Combo</button>
+    </form>
+  </div>
 </main>
 
 <%- include("../partials/footer") %>

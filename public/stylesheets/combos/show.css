@@ -83,6 +83,19 @@ i {
   padding: 10px;
 }
 
+.new-input {
+  margin: 50px;
+}
+
+.new-input * {
+  margin: 7px;
+}
+
+form input, form textarea  {
+  background-color: #5F5458;
+  color: #f6f6f6;
+}
+
 a {
   color: #e3e3e3;
   text-decoration: none;
