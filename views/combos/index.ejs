@@ -5,6 +5,7 @@
   <% combos.forEach(combo => { %>
     <li> 
       <a href="/combos/<%= combo._id %>"><%= combo.name %> </a>
+      <%#- include('../partials/combo-display') %>
     </li>
   <% }) %>
 </ul>

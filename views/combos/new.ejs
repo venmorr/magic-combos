@@ -13,14 +13,14 @@
       autocomplete="off"
     >
     <label for="description-input">Description:</label>
-    <input 
-      type="text"
+    <textarea 
+      name="content" 
+      id="new-form"
       name="description" 
       value="<%= combos.description %>" 
-      autocomplete="off"
-    >
-
-    <button type="submit">Add Combo</button>
+      autocomplete="off">
+    </textarea>
+    <button class="btn" type="submit">Add Combo</button>
   </form>
 </main>
 
