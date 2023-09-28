@@ -1,25 +1,27 @@
 
-# <ins>Magic Combos<ins/>
-Coded by: Steven Morrison
+# [Magic Combos](https://magic-combos.fly.dev/) 
 
-- **Screenshot/Logo:** A screenshot of your app or a logo. 
-<!-- ![Alt text](<>) -->
+## Snappy tag line for the app
 
-description:
+description...
 
-- **Getting Started**: Include a link to the **deployed app** and your **Trello board** with the project’s planning.  
+![Alt text](<public/images/Screenshot 2023-09-27 at 6.55.02 PM.png>)
+  
 https://magic-combos.fly.dev/  
 https://trello.com/b/6eNeHDoP/magic-combos  
 
-- ************************Attributions************************: 
-magic the gathering api
-Ben Manly's database seeding program
-font awsome icons
-google Oauth 
+**Attributions**: 
+- Magic the Gathering api
+- Wizards of the Coast card art
+- Ben Manly's database seeding program
+- Font Awesome icons
+- google Oauth 
 
-- **Technologies Used**: List of the technologies used.
+**Technologies Used**:
+- HTML5
+- Javascript
+- CSS
+- MongoDB
 
 
-- **Next Steps**: Planned future enhancements (icebox items).
-
-- Your **`README.md`** file must be grammatically correct and free of spelling errors.
+**Next Steps**: 

@@ -2,6 +2,7 @@
 <%- include('../partials/nav') %>
 
 <main>
+  <div class="new-input">
   <h1> <%= combo.name %></h1>
   <form id="new-form" action="/combos/<%= combo._id %>?_method=PUT" method="POST">
     
@@ -11,10 +12,15 @@
 <!-- card input -->
 
     <label for="description">Description:</label>
-    <input type="text" value="<%= combo.description %>" name="description" id="description">
+    <input 
+    type="text" 
+    value="<%= combo.description %>" 
+    name="description" 
+    id="description">
 
-    <button type="submit">Update Combo</button>
+    <button class="button-56" role="button">Update Card</button>
   </form>
+</div>
 </main>
 
 <%- include('../partials/footer') %>
