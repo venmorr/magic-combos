@@ -42,7 +42,7 @@ function create(req, res) {
   req.body.author = req.user.profile._id
   Combo.create(req.body)
   .then(combo => {
-    res.redirect('/combos')
+    res.redirect(`/combos/${combo._id}`)
   })
   .catch(err => {
     console.log(err)
@@ -119,7 +119,11 @@ function deleteCombo(req, res) {
 function createComment(req, res) {
   Combo.findById(req.params.comboId)
   .then(combo => {
-    combo.comments.push(req.body)
+    const newComment = {
+      content: req.body.content,
+      author: req.user.profile._id,
+    }
+    combo.comments.push(newComment)
     combo.save()
     .then(() => {
       res.redirect(`/combos/${combo._id}`)

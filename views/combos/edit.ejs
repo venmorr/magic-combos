@@ -6,12 +6,12 @@
   <h1> <%= combo.name %></h1>
   <form id="new-form" action="/combos/<%= combo._id %>?_method=PUT" method="POST">
     
-    <label for="name-input">Name:</label>
+    <label for="name-input">Combo Name:</label>
     <input type="text" value="<%= combo.name %>" name="name" id="name-input">
     
 <!-- card input -->
 
-    <label for="description">Description:</label>
+    <label for="description">Combo Description:</label>
     <input 
     type="text" 
     value="<%= combo.description %>" 
