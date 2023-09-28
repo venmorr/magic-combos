@@ -21,10 +21,11 @@ and check out my planning process [here](https://trello.com/b/6eNeHDoP/magic-com
 
 **Attributions**:
 - 
-- [Magic the Gathering api](https://docs.magicthegathering.io/)
 - [Wizards of the Coast card art](https://company.wizards.com/en)
+- [Magic the Gathering api](https://docs.magicthegathering.io/)
 - [Ben Manly's database seeding program](https://github.com/ManliestBen/mtg-seeder)
 - [Font Awesome icons](https://fontawesome.com/)
+- [Beautiful CSS buttons](https://getcssscan.com/css-buttons-examples?ref=beautifulboxshadow-bottom)
 
 **Technologies Used**:
 -
@@ -46,3 +47,5 @@ and check out my planning process [here](https://trello.com/b/6eNeHDoP/magic-com
 - TAP! A system to "tap" combos you like so that you can save them for later in your "Tapped List."
 - Detailed card view. Functionality allowing users to choose any card to take a closer look at to learn more about it.
 - Mana color marks. Check boxes in the combo creation and edit process that allows you to choose which mana colors are included in the combo.
+- I want to work on the mobile display for this app. It is pretty good already except for in the combo details area, the buttons overlap the description a bit.
+- Live Price API: I think It would be really cool to find some way to display the price of these combos based on the current price of each of these cards.
