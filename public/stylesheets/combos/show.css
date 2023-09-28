@@ -2,9 +2,11 @@
   border: 1px solid red;
 } */
 
+html * {
+  border: 1px solid #00000000;
+}
+
 body {
-  /* margin: 0; */
-  /* background-color: #402E32; */
   background-image: linear-gradient(to top, #5f5458, #574a4e, #4f4145, #48373b, #402e32);
   color: #f6f6f6;
   font-family: system-ui;
@@ -12,8 +14,6 @@ body {
 
 nav {
   height: 80px;
-  /* background-color: #e87817; */
-  /* background-color: #FEA04D; */
   background-image: linear-gradient(to right bottom, #e87817, #ee8226, #f38c34, #f99641, #fea04d);
   width: 100%;
   display: flex;
@@ -61,7 +61,10 @@ i {
 .card-list-index {
   display: flex;
   justify-content: flex-start;
-  /* flex-wrap: wrap; */
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-right: 10px solid #402E32;
 }
 
 .card-list {
@@ -110,17 +113,7 @@ li {
   background-color: #5F5458;
   max-width: 90vw;
   padding: 10px;
-}
-
-.card-list-index {
-  width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
-  border-right: 10px solid #402E32;
-}
-
-.edit-button{
-
+  box-shadow: 5px 3px 3px rgb(37, 35, 35);
 }
 
 .left {
@@ -167,8 +160,26 @@ h3 {
 
 .removeCard {
   position: absolute;
-  
+  background-color: #00000050;
+  color: #f6f6f6;
+  border-radius: 50%;
 }
+
+.X{
+  background-color: #00000050;
+  color: #f6f6f6;
+  border-radius: 50%;
+}
+
+.removeCard:hover{
+  background-color: red;
+}
+
+.X:hover{
+  background-color: red;
+  border-radius: 50%;
+}
+
 
 /* CSS */
 .button-49,

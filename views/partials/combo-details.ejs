@@ -44,7 +44,7 @@
                 <td>
                   <% if (combo.author.equals(user.profile._id)) { %>
                   <form action="/combos/<%= combo._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
-                    <button>X</button>
+                    <button class="X">x</button>
                   <% } %>  
                   </form>
                 </td>
