@@ -23,7 +23,7 @@ and check out my planning process [here](https://trello.com/b/6eNeHDoP/magic-com
 - 
 - [Magic the Gathering api](https://docs.magicthegathering.io/)
 - [Wizards of the Coast card art](https://company.wizards.com/en)
-- Ben Manly's database seeding program
+- [Ben Manly's database seeding program](https://github.com/ManliestBen/mtg-seeder)
 - [Font Awesome icons](https://fontawesome.com/)
 
 **Technologies Used**:
