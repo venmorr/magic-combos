@@ -4,22 +4,30 @@
 </head>
 <body>
   <nav>
-    <a href="/combos" id="nav-el">
+    <a href="/combos" class="nav-combos" id="nav-el">
       <!-- COMBOS -->
       <i class="fa-solid fa-wand-sparkles fa-2xl" style="color: #1a1a1a;"></i>
+      <h5 class="nav-text">COMBOS</h5>
     </a>
 
     <% if (user) { %>
-    <a href="/combos/new" class="right" id="nav-el">
+    <a href="/combos/new" class="nav-new" id="nav-el">
       <!-- + -->
       <i class="fa-solid fa-plus fa-2xl" style="color: #1a1a1a;"></i>
+      <h5 class="nav-text">NEW</h5>
     </a>
     <% } %>
 
     <% if (user) { %>
-      <a href="/profiles/index" class="right" id="nav-el">
+      <a href="/profiles/index" class="nav-profiles" id="nav-el">
         <!-- PROFILES -->
         <i class="fa-solid fa-hat-wizard fa-2xl" style="color: #1a1a1a;"></i>
+        <h5 class="nav-text">PROFILES</h5>
+      </a> 
+
+      <a href="/auth/logout" class="nav-logout" id="nav-el">
+        <i class="fa-solid fa-dungeon fa-2xl" style="color: #1a1a1a;"></i>
+        <h5 class="nav-text">LOGOUT</h5>
       </a>
     <% } else { %>
       <div 
