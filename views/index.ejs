@@ -3,16 +3,11 @@
 <%- include('./partials/nav') %>
 
 <main>
-  <h1>hello, <%= user ? user.profile.name : "friend" %></h1>
-  <% if (user?.profile.avatar) { %>
-    <div>
-      <img
-        id="avatar"
-        src="<%= user.profile.avatar %>"
-        alt="<%= user.profile.name %> avatar"
-      />
-    </div>
-  <% } %>
+  <div class="homepage">
+    <i class="fa-solid fa-wand-sparkles fa-2xl" style="color: #1a1a1a;"></i>
+    <i class="fa-solid fa-plus fa-2xl" style="color: #1a1a1a;"></i>
+    <i class="fa-solid fa-hat-wizard fa-2xl" style="color: #1a1a1a;"></i>
+  </div>
 </main>
 
 <%- include('./partials/footer') %>

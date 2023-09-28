@@ -1,6 +1,6 @@
-/* html * {
+html * {
   border: 1px solid red;
-} */
+}
 
 /* The Universal Selector */
 *, /* All elements*/
@@ -32,11 +32,14 @@ nav > a {
   text-decoration: none;
   font-size: 24px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
-/* added */
+.homepage {
+  display: flex;
+
+}
+
 h1 {
   font-size: 36px;
 }
