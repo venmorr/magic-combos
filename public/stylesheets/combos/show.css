@@ -15,6 +15,7 @@ body {
 nav {
   height: 80px;
   background-image: linear-gradient(to right bottom, #e87817, #ee8226, #f38c34, #f99641, #fea04d);
+  /* background-color: #fEA04D; */
   width: 100%;
   display: flex;
   justify-content: space-between;

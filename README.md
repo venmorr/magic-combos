@@ -5,7 +5,7 @@
 
 description...
 
-![Alt text](<public/images/Screenshot 2023-09-27 at 6.55.02 PM.png>)
+![Alt text](<![Alt text](<public/images/Screenshot 2023-09-27 at 11.47.27 PM.png>)>)
   
 https://magic-combos.fly.dev/  
 https://trello.com/b/6eNeHDoP/magic-combos  
