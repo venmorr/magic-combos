@@ -15,7 +15,7 @@ function index(req, res) {
   .then(combos => {
     res.render('combos/index', {
       combos,
-      title: 'title'
+      title: 'Combos'
     })
   })
   .catch(err => {
@@ -59,7 +59,8 @@ function show(req, res) {
   .then(combo => {
     res.render('combos/show', {
       combo,
-      title: "combo show"
+      // title: "combo show"
+      title: `${combo.name}`
     })
   })
   .catch(err => {
