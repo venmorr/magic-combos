@@ -6,8 +6,6 @@
 ![Alt text](<public/images/Screenshot 2023-09-28 at 10.00.29 PM.png>)
 -
 
--
-
 In the world of Magic the Gathering, strategy is everything. Magic Combos is your dedicated portal to discover, share, and master the most potent card combinations to elevate your gameplay. Dive deep into a community where like-minded players share secrets, insights, and more, ensuring you always have the upper hand in any duel.
 
 
@@ -22,9 +20,16 @@ and check out my planning process [here](https://trello.com/b/6eNeHDoP/magic-com
 **Highlights**:  
 -
 
-<!-- put highlight here
- -->
-
+```
+.card-list-index {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-right: 10px solid #402E32;
+}
+```
 
 **Attributions**:
 - 
