@@ -3,9 +3,9 @@
 
 ## Your Deck's Best Kept Secrets Unveiled.
 
-![Alt text](<public/images/Screenshot 2023-09-27 at 11.47.27 PM.png>)
+![Alt text](< <!-- new screen shots please --> >)
 -
-![Alt text](<public/images/Screenshot 2023-09-28 at 12.40.27 AM.png>)
+![Alt text](< <!-- new screen shots please --> >)
 -
 
 In the world of Magic the Gathering, strategy is everything. Magic Combos is your dedicated portal to discover, share, and master the most potent card combinations to elevate your gameplay. Dive deep into a community where like-minded players share secrets, insights, and more, ensuring you always have the upper hand in any duel.
@@ -19,6 +19,13 @@ Join us and become a combo crafter, a strategist, and most importantly, a master
 Try out Magic Combos [here](https://magic-combos.fly.dev/),  
 and check out my planning process [here](https://trello.com/b/6eNeHDoP/magic-combos).  
 
+**Highlights**:  
+-
+
+<!-- put highlight here
+ -->
+
+
 **Attributions**:
 - 
 - [Wizards of the Coast card art](https://company.wizards.com/en)
@@ -26,6 +33,7 @@ and check out my planning process [here](https://trello.com/b/6eNeHDoP/magic-com
 - [Ben Manly's database seeding program](https://github.com/ManliestBen/mtg-seeder)
 - [Font Awesome icons](https://fontawesome.com/)
 - [Beautiful CSS buttons](https://getcssscan.com/css-buttons-examples?ref=beautifulboxshadow-bottom)
+- [CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) 
 
 **Technologies Used**:
 -
