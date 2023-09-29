@@ -3,9 +3,9 @@
 
 ## Your Deck's Best Kept Secrets Unveiled.
 
-![Alt text](< <!-- new screen shots please --> >)
+![Alt text](<public/images/Screenshot 2023-09-28 at 10.00.29 PM.png>)
 -
-![Alt text](< <!-- new screen shots please --> >)
+
 -
 
 In the world of Magic the Gathering, strategy is everything. Magic Combos is your dedicated portal to discover, share, and master the most potent card combinations to elevate your gameplay. Dive deep into a community where like-minded players share secrets, insights, and more, ensuring you always have the upper hand in any duel.

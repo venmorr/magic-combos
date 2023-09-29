@@ -127,6 +127,10 @@ i {
   align-items: flex-end;
   margin: 2px;  
 }
+.comment {
+  display: flex;
+  flex-direction: row;
+}
 
 .combo-details {
   display: flex;
