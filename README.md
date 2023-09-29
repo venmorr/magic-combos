@@ -1,12 +1,11 @@
-
 # [Magic Combos](https://magic-combos.fly.dev/) 
 
 ## Your Deck's Best Kept Secrets Unveiled.
 
-![Alt text](<public/images/Screenshot 2023-09-28 at 10.00.29 PM.png>)
--
+![Alt text](https://i.imgur.com/NknJik9.png)
 
-In the world of Magic the Gathering, strategy is everything. Magic Combos is your dedicated portal to discover, share, and master the most potent card combinations to elevate your gameplay. Dive deep into a community where like-minded players share secrets, insights, and more, ensuring you always have the upper hand in any duel.
+
+In the world of Magic the Gathering, strategy is everything. Magic Combos is your dedicated portal to discover, share, and master the most potent card combinations to elevate your game-play. Dive deep into a community where like-minded players share secrets, insights, and more, ensuring you always have the upper hand in any duel.
 
 
 Remember the days of unsleeved decks held together with rubber bands, where torn tissues served as counters, and mentally keeping track of health points was the norm? We've come a long way from those nostalgic moments. Now, it's all about mastering the art of the combo. With Magic Combos, you’re not just playing the game – you're reshaping it, one combo at a time.
